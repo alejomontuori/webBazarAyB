@@ -15,7 +15,7 @@ function App() {
           <section className="flex justify-center py-24 px-6" id="productos">
             <div className="min-h-screen p-8">
               <div className="max-w-7xl mx-auto">
-                <h1 className="text-4xl font-semibold mb-10">
+                <h1 className="text-4xl text-center font-semibold mb-10">
                   Nuestros Productos
                 </h1>
                 {/* Grilla responsiva */}
@@ -37,34 +37,33 @@ function App() {
                 </div>*/}
           </section>
 
-          <section className="flex justify-center py-24 px-6" id="sobreNosotros">
-            {/* Contenedor principal que centra el contenido y maneja la responsividad */}
+          <section
+            className="flex justify-center py-24 px-6"
+            id="sobreNosotros"
+          >
             <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16 max-w-5xl w-full">
-              {/* Contenedor para el texto */}
               <div className="flex flex-col gap-4 md:text-left">
-                <h1 className="text-4xl font-semibold">Sobre Nosotros</h1>
+                <h1 className="text-4xl text-center font-semibold">Sobre Nosotros</h1>
                 <p className="text-xl">
-                  En BazarAyB, nos dedicamos a ofrecer una amplia variedad de
-                  productos de alta calidad a precios competitivos. Nuestra
-                  misión es brindar a nuestros clientes una experiencia de
-                  compra excepcional, con un enfoque en la satisfacción del
-                  cliente y la innovación constante.
+                  En BazarAyB nos gusta ofrecerte de todo un poco, siempre con
+                  buena calidad y a precios que valen la pena. Te ayudamos a
+                  mantener tu casa limpia y ordenada, haciendo que tu
+                  experiencia de compra sea práctica y agradable. Nuestra idea
+                  es cuidar siempre tu satisfacción y sorprenderte con novedades
+                  todo el tiempo.
                 </p>
               </div>
 
-              {/* Contenedor para las imágenes */}
               <div className="flex flex-shrink-0 gap-4">
-                {/* - w-48 h-48 equivale aprox. a 12rem x 12rem (cerca de 5cm).
-               - object-cover evita que la imagen se deforme.*/}
                 <img
                   src="/images/belenPerfil.webp"
                   alt="Integrante Belén"
-                  className="w-48 h-48 object-cover rounded-lg shadow-md"
+                  className="w-40 h-40 object-cover rounded-lg shadow-md md:w-48 md:h-48"
                 />
                 <img
                   src="/images/alejoPerfil.webp"
                   alt="Integrante Alejo"
-                  className="w-48 h-48 object-cover rounded-lg shadow-md"
+                  className="w-40 h-40 object-cover rounded-lg shadow-md md:w-48 md:h-48"
                 />
               </div>
             </div>
@@ -72,9 +71,7 @@ function App() {
 
           <section className="flex justify-center py-24 px-6" id="contacto">
             <div className="max-w-4xl mx-auto sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-semibold sm:text-4xl">
-                Contacto
-              </h1>
+              <h1 className="text-4xl text-center font-semibold sm:text-4xl">Contacto</h1>
 
               <p className="mt-4 text-lg text-center leading-8 text-gray-600">
                 Estamos para ayudarte. Escribinos por WhatsApp o seguinos en
@@ -82,7 +79,6 @@ function App() {
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-                
                 <a
                   href="https://wa.me/5492617038693"
                   target="_blank"
@@ -119,8 +115,6 @@ function App() {
                   WhatsApp Villa Tulumaya
                 </a>
 
-
-                {/* Botón Instagram con ícono */}
                 <a
                   href="https://www.instagram.com/ab_hogar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
